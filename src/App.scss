@@ -1,0 +1,130 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+//fonts
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Do Hyeon', sans-serif;
+// font-family: 'Merienda One', cursive;
+// font-family: 'Montserrat', sans-serif;
+
+
+//colors
+$light-yellow:#F2ED6F;
+$yellow:#F4E04D;
+$light-green:#CEE397;
+$dark-blue:#2C4251;
+
+//sizes
+$xsmall-size:0.5rem;
+$small-size:1rem;
+$mid-size:2rem;
+$large-size:3rem;
+$xlarge-size:4rem;
+
+
+.container{
+  max-width: 600px;
+  border-radius: $mid-size;
+  padding: $mid-size;
+  background-color: $yellow;
+}
+
+.display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.even{
+  justify-content: space-evenly;
+}
+#heading{
+  font-size: $xlarge-size;
+  margin:0;
+  padding: $small-size;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.timer-container{
+  width: 100%;
+  margin: $mid-size 0;
+}
+
+
+#session-label,#break-label{
+  font-size: $mid-size;
+  background-color:$light-green;
+  padding: $xsmall-size $small-size;
+  text-align: center;
+  border-radius: $small-size;
+  margin-bottom:$xsmall-size ;
+  font-family: 'Merienda One', cursive;
+}
+
+
+#timer-label{
+  margin: 0;
+  font-size: $large-size;
+  background-color:$light-green;
+  border-radius: $small-size;
+  padding: $xsmall-size $mid-size ;
+  text-transform: capitalize;
+  font-family: 'Merienda One', cursive;
+  margin-bottom: $small-size;
+}
+
+#break-length,#session-length,#time-left{
+  font-size: $mid-size;
+  font-weight: bold;
+  color: $dark-blue;
+}
+
+.btn{
+  background: none;
+  outline: none;
+  border: none;
+  font-size: $mid-size;
+  padding: $xsmall-size $small-size;
+  border-radius: 1rem;
+}
+
+.btn:hover{
+  background-color: $light-green;
+  // color: white;
+  cursor: pointer;
+}
+.btn:hover:disabled{
+  background-color: transparent;
+  cursor:no-drop;    
+}
+
+#made-by{
+  margin-top:$small-size;
+  font-weight: bold;
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 2rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media(max-width:450px){
+  #session-label,#break-label{
+      font-size: 1.5rem;
+  }
+}
