@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#pomodoro clock
+# pomodoro clock
 pomodoro clock made using reactjs
 
 ## live demo
